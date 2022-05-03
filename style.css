@@ -12,7 +12,6 @@
     padding: 0 100px;
 }
 
-
 .container-two{
     margin: 0 auto;
     max-width: 900px;
@@ -329,6 +328,127 @@
 }
 
 
+/* second html page */
+.blue-box-second{
+    height: 600px;
+ 
+}
+
+.slider img{
+    position: absolute;
+    top: 140px;
+    left: 400px;
+    width: 500px;
+
+}
+
+/* about us section */
+.about-us h3{
+    color: #171717;
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 200px;
+}
+
+.about-us p{
+    color: #171717;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 70px;
+    width: 550px;
+}
+
+.about-us img{
+    width: 500px;
+    margin-left: 700px;
+    margin-top: -260px;
+}
+
+/* services */
+.rectangle{
+    width: 40px;
+    height: 40px;
+    background-color: #eee1e1;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.services{
+    margin-top: 190px;
+}
+.services h3{
+    color: #171717;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.rec-blue{
+    background-color: blue;
+}
+
+.services-box{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+}
+
+.services-box h4{
+    margin-bottom: 20px;
+    color: #171717;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.services-box p{
+    color: #171717;
+    font-size: 16px;
+    line-height: 26px;
+}
 
 
+.blue-box-third{
+    width: 100%;
+    background-color: #0020F4;
+    height: 200px;
+    margin-top: 200px;
+}
 
+/* projects */
+
+.projects-pics img{
+    width: 300px;
+}
+
+
+/* partners */
+.partners{
+    display: flex;
+    margin-top: 200px;
+}
+
+.partners-box{
+    margin-right: 80px;
+}
+
+.partners-box h3{
+    color: #171717;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 40px;
+
+}
+
+.partners-box p{
+    color: #171717;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.pics-3{
+    display: flex;
+}
+
+.partners-img{
+    margin-top: 60px;
+
+}
