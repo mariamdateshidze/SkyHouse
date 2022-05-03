@@ -25,6 +25,7 @@
 }
 
 /* header */
+
 .blue-box{
     position: relative;
     display: flex;
@@ -34,8 +35,6 @@
     padding: 50px 100px;
 
 }
-
-
 
 .blue-box img {
     width: 115px;
