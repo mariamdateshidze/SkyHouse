@@ -70,6 +70,7 @@
 }
 
 
+
 .main-page a{
     border-bottom: 1px solid   white;
     padding-bottom: 10px;
@@ -78,6 +79,10 @@
 .blue-box a:hover{
     border-bottom: 1px solid   white;
     padding-bottom: 10px;
+}
+
+#logo{
+    border-bottom: none;
 }
 
 
