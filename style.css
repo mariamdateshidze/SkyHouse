@@ -21,6 +21,7 @@
 .blue{
     background-color: #0020F4;
     width: 100%;
+
 }
 
 /* header */
@@ -32,7 +33,7 @@
     justify-content: space-between;
     height: 390px;
     padding: 50px 100px;
-
+ 
 }
 
 .blue-box img {
@@ -45,8 +46,10 @@
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    margin-top: 20px;
    
 }
+
 #contact-btn{
     color: #171717;
     background-color: white;
@@ -69,8 +72,6 @@
     line-height: 18px;
 }
 
-
-
 .main-page a{
     border-bottom: 1px solid   white;
     padding-bottom: 10px;
@@ -79,10 +80,38 @@
 .blue-box a:hover{
     border-bottom: 1px solid   white;
     padding-bottom: 10px;
+    transition: all .5s;
+    transform: translateY(90px);
 }
 
 #logo{
     border-bottom: none;
+    transition: none;
+    transform: none;
+}
+
+#fixed-btn{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    background-color: #a2abe9;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    z-index: 1;
+}
+
+#fixed-btn:hover{
+    background-color: #0020F4;
+    transition: all 0.5s;
+}
+#fixed-btn:active{
+    background-color: #0020F4;
+
+}
+.arrow{
+    width: 60px;
 }
 
 
@@ -127,7 +156,6 @@
 }
 
 .text-content p{
-
     margin-bottom: 25px;
     font-size: 16px;
     line-height: 26px;
@@ -424,11 +452,36 @@
     width: 300px;
 }
 
+.blue-box-third{
+    position: relative;
+}
+
+.projects-pics{
+    position: absolute;
+    top: 2400px;
+    left: 100px;
+   
+   
+}
+.projects-pics img{
+    margin-right: 20px;
+   
+}
+.projects h3{
+    position: absolute;
+    top: 2300px;
+    font-size: 32px;
+    line-height: 39px;
+    color: white;
+    
+}
+
 
 /* partners */
 .partners{
     display: flex;
-    margin-top: 200px;
+    margin-top: 400px;
+
 }
 
 .partners-box{
