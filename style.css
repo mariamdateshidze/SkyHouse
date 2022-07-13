@@ -114,9 +114,7 @@
     width: 60px;
 }
 
-
 /* pictures section */
-
 .main-pic{
     width: 900px;
     position: absolute;
@@ -127,7 +125,6 @@
 .main-pic:hover{
     width: 930px;
     transition:0.5s;
-
 }
 
 .title h3{
@@ -163,13 +160,20 @@
     color: #171717;
 }
 
+.more-info{
+    display: none;
+}
+
+.more-info.active{
+    display: block;
+}
+
 .text-content{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
    
-
 .moreinfo-button{
     font-size: 16px;
     line-height: 19px;
@@ -186,8 +190,6 @@
     background-color: #0a22bb;
     font-size: 18px;
     transition: all linear 0.5s;
-
-
 }
     
 
@@ -236,7 +238,6 @@
     display: flex;
     flex-direction: column;
    
-    
 }
 
 .icons-line img{
@@ -281,7 +282,7 @@
     width: 400px;
     height: 30px;
     color: azure;
-
+    outline: none;
 }
 
 
@@ -295,8 +296,6 @@
     font-size: 16px;
     line-height: 19px;
 }
-
-
 
 .blue-contact{
     display: flex;
@@ -325,7 +324,39 @@
     background-color: rgb(205, 220, 223);
     transition: 0.5s;
   
+}
 
+/* modal popup */
+.modal {
+    display: none;
+    position: fixed;
+    left: 200px;
+    right: 200px;
+    top: 200px;
+    bottom: 200px;
+    background-color: aliceblue;
+    padding: 80px;
+    text-align: center;
+}
+.modal.visible {
+    display: block;
+}
+
+.modal-content{
+    font-size: 30px;
+    color: #171717;
+    font-family: 'Lato';
+}
+
+#close-btn{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 770px;
 }
 
 /* footer */
@@ -395,6 +426,7 @@
     width: 500px;
     margin-left: 700px;
     margin-top: -260px;
+    background-image: linear-gradient(to right, red , yellow);
 }
 
 /* services */
@@ -404,6 +436,35 @@
     background-color: #eee1e1;
     margin-top: 60px;
     margin-bottom: 30px;
+}
+
+.rectangle2{
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    background-color: rgb(235, 230, 230);
+    border: 3px rgb(46, 26, 160) solid;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.three-rect{
+    display: flex;
+    margin-left: 900px;
+    margin-top: -20px;
+    
+
+}
+
+.rectangle2:hover {
+    border: 3px #140663 solid;
+    transition: all .5s;
+}
+
+.rectangle2.active{
+    border: 3px #6c36e9 solid;
+    background-color: #0020F4;
 }
 
 .services{
@@ -448,8 +509,9 @@
 
 /* projects */
 
-.projects-pics img{
+.projects-pic img{
     width: 300px;
+    margin-right: 60px;
 }
 
 .blue-box-third{
@@ -460,13 +522,52 @@
     position: absolute;
     top: 2400px;
     left: 100px;
-   
-   
+    display: flex;
+     
 }
-.projects-pics img{
-    margin-right: 20px;
-   
+
+.projects-pic{
+    position: relative;
+
 }
+
+.pic-overlay{
+    position: absolute;
+    top: 160px;
+    left: 4px;
+    width: 80%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.pic-overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.projects-pic:hover .pic-overlay{
+    opacity: 1;
+}
+
+.pic-overlay:hover > *{
+    transform: translateY(0);
+
+}
+
+.pic-overlay p{
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+    margin-left: 20px;
+    
+}
+
 .projects h3{
     position: absolute;
     top: 2300px;
