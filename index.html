@@ -101,22 +101,24 @@
                             
                             </div>
 
-                            <form action="/" novalidate>
-                                <div class="form-box">
+                            <form class="form-box" action="/" novalidate>
+                                <div class="form-box form-field">
                                     <div class="input-info">
                                         <label for="user-name">სახელი, გვარი</label>
                                         <input type="text" id="user-name"  value="" required />
                                     </div>
-                                    <div class="input-info">
+                                    <div class="input-info form-field">
                                         <label for="email">ელ. ფოსტა</label>
-                                        <input type="email" id="email"  value="" required />
+                                        <input name="email" type="email" id="email"  value="" required />
+                                        <p class="error-message"></p>
                                     </div>
-                                    <div class="input-info">
+                                    <div class="input-info form-field">
                                         <label for="number">ტელეფონის ნომერი</label>
-                                        <input type="number" id="number"  value="" />
+                                        <input name="mobile_number" type="number" id="number"  value="" />
+                                        <p class="error-message"></p>
                                     </div>
 
-                                    <div class="input-info">
+                                    <div class="input-info form-field">
                                         <label for="message">შეტყობინება</label>
                                         <input class="message" type="text" id="message"  value="" />
                                     </div>
@@ -124,8 +126,6 @@
                                     <button class="send-button" type="submit">
                                         გაგზავნა
                                     </button>
-
-
                                 </div>
 
                             </form>

@@ -11,7 +11,7 @@
 <body>
     <main>
         <div>
-            <header class="blue">
+            <header class="blue container">
                 <nav  class="blue-box container blue-box-second"> 
                     <a id="logo" href="index.html"> <img src="images/Group 2.png"  alt="logo"></a>
                     <ul>
@@ -23,6 +23,30 @@
                         <li><a id="contact-btn" href="#contact">კონტაქტი</a></li>
                     </ul>
                 </nav>
+                <div class="slider-btns">
+                    <button id="prev-slide-btn">
+                        <img class="arrow" src="images/left.png" alt="arrow">
+                    </button>
+                    <button id="next-slide-btn">
+                        <img class="arrow" src="images/arrow-right.png" alt="arrow">
+                    </button>
+                </div>
+
+                <div class="pic-content slider">
+                    <div class="slider-wrapper">
+                        <div class="slider-item active">
+                            <img class="my-photo" src="images/Rectangle 18.png" />
+                        </div>
+    
+                        <div class="slider-item">
+                            <img  class="my-photo" src="images/Rectangle 19.png" />
+                        </div>
+    
+                        <div class="slider-item">
+                            <img  class="my-photo" src="images/Rectangle 21.png" />
+                        </div>
+                    </div>
+                </div>
             </header>
 
             <div>
@@ -31,9 +55,6 @@
                 </button>
             </div>
 
-            <div class="slider">
-                <img src="images/Rectangle 3.png" alt="building picture">
-            </div>
 
             <!-- about us section -->
             <section class="about-us container">
@@ -60,13 +81,16 @@
                     სერვისები
                 </h3>
                 <div class="three-rect">
-                    <button class="rectangle2"></button>
+                    <button class="rectangle2 active"></button>
                     <button class="rectangle2"></button>
                     <button class="rectangle2"></button>
                 </div>
                 <div class="services-box">
-                    <div class="single-serv-box">
-                        <div class="rectangle"></div>
+                    <div class="single-serv-box active">
+                        <div>
+                            <img src="images/Rectangle 21.png" alt="building">
+
+                        </div>
                         <h4>სერვისი 1</h4>
                         <p>
                             ცნობილი ფაქტია, 
@@ -75,7 +99,9 @@
                     </div>
     
                     <div  class="single-serv-box">
-                        <div class="rectangle rec-blue"> </div>
+                        <div>
+                            <img src="images/Rectangle 19.png" alt="building">
+                        </div>
                         <h4>სერვისი 2</h4>
                         <p>
                             ცნობილი ფაქტია, 
@@ -84,7 +110,9 @@
                     </div>
     
                     <div  class="single-serv-box">
-                        <div class="rectangle"></div>
+                        <div >
+                            <img src="images/Rectangle 18.png" alt="building">
+                        </div>
                         <h4>სერვისი 3</h4>
                         <p>
                             ცნობილი ფაქტია,
@@ -93,48 +121,43 @@
                     </div>
 
                 </div>
-                
             </section>
 
-            
             <!-- projects -->
             <section>
-                <div class="blue-box-third"></div>
+                <div class="blue-box-third container">
 
-                <div class="projects container" id="projects">
-                    <h3>პროექტები</h3>
+                    <div class="projects container" id="projects">
+                        <h3>პროექტები</h3>
 
-                    <div class="projects-pics">
-                        <div class="projects-pic">
-                            <img src="images/Rectangle 18.png" alt="building">
-                            <div class="pic-overlay">
-                                <p>ჩვენი მიმდინარე პროექტი რომელიც შენდება დიდუბეში, წერეთლის 143 ნომერში</p>
-                                
+                        <div class="projects-pics">
+                            <div class="projects-pic">
+                                <img src="images/Rectangle 18.png" alt="building">
+                                <div class="pic-overlay">
+                                    <p>ჩვენი მიმდინარე პროექტი რომელიც შენდება დიდუბეში, წერეთლის 143 ნომერში</p>
+                                    
+                                </div>
                             </div>
+
+                            <div class="projects-pic">
+                                <img src="images/Rectangle 19.png" alt="building">
+                                <div class="pic-overlay">
+                                    <p>ჩვენი მიმდინარე პროექტი რომელიც შენდება დიდუბეში, წერეთლის 143 ნომერში</p>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="projects-pic">
+                                <img src="images/Rectangle 21.png" alt="building">
+                                <div class="pic-overlay">
+                                    <p>ჩვენი მიმდინარე პროექტი რომელიც შენდება დიდუბეში, წერეთლის 143 ნომერში</p>
+                                    
+                                </div>
+                            </div> 
                         </div>
-
-                        <div class="projects-pic">
-                            <img src="images/Rectangle 19.png" alt="building">
-                            <div class="pic-overlay">
-                                <p>ჩვენი მიმდინარე პროექტი რომელიც შენდება დიდუბეში, წერეთლის 143 ნომერში</p>
-                                
-                            </div>
-                        </div>
-
-                        <div class="projects-pic">
-                            <img src="images/Rectangle 21.png" alt="building">
-                            <div class="pic-overlay">
-                                <p>ჩვენი მიმდინარე პროექტი რომელიც შენდება დიდუბეში, წერეთლის 143 ნომერში</p>
-                                
-                            </div>
-                        </div> 
-
                     </div>
-
                 </div>
               
-
-               
              <!-- partners -->
             </section>
                 <div class="partners container" id="partners">
@@ -201,30 +224,31 @@
                     
                     </div>
 
-                    <form action="/" novalidate>
-                        <div class="form-box">
+                    <form class="form-box" action="/" novalidate>
+                        <div class="form-box form-field">
                             <div class="input-info">
                                 <label for="user-name">სახელი, გვარი</label>
                                 <input type="text" id="user-name"  value="" required />
                             </div>
-                            <div class="input-info">
+                            <div class="input-info form-field">
                                 <label for="email">ელ. ფოსტა</label>
-                                <input type="email" id="email"  value="" required />
+                                <input name="email" type="email" id="email"  value="" required />
+                                <p class="error-message"></p>
                             </div>
-                            <div class="input-info">
+                            <div class="input-info form-field">
                                 <label for="number">ტელეფონის ნომერი</label>
-                                <input type="number" id="number"  value="" />
+                                <input name="mobile_number" type="number" id="number"  value="" />
+                                <p class="error-message"></p>
                             </div>
 
-                            <div class="input-info">
+                            <div class="input-info form-field">
                                 <label for="message">შეტყობინება</label>
                                 <input class="message" type="text" id="message"  value="" />
                             </div>
 
-                            <button class="send-button" id="secondsend" type="submit">
+                            <button class="send-button" type="submit">
                                 გაგზავნა
                             </button>
-
 
                         </div>
 
