@@ -8,6 +8,41 @@ const form = document.querySelector('.form-box');
 const emailInput = document.querySelector('input[name="email"]');
 const mobileInput = document.querySelector('input[name="mobile_number"]');
 
+const myModal = document.querySelector('.modal');
+const content = document.querySelector('.main-cont')
+
+const modalbtn = document.querySelector('.sendbut')
+
+
+let myInterval=null;
+let activeIndex = 0;
+
+setTimeout(
+	function(){
+        openModal();
+    }
+  ,5000 
+);
+  
+function openModal(){
+    myModal.classList.add('visible');
+    content.classList.add('blured')
+}
+
+const closeBtn = document.querySelector('.modal-close');
+
+closeBtn.addEventListener('click', () => {
+    myModal.classList.remove('visible');
+    content.classList.remove('blured')
+    });
+
+modalbtn.addEventListener('click', () => {
+    alert("თქვენ გამოიწერეთ გვერდი")
+    myModal.classList.remove('visible');
+    content.classList.remove('blured')
+    });
+
+//   form
 form.addEventListener('submit', e => {
     e.preventDefault();
     try {

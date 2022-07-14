@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <div>
+        <div class="main-cont">
                     <header class="blue">
                         <nav  class="blue-box container"> 
                             <a id="logo" href="#"> <img src="images/Group 2.png"  alt="logo"></a>
@@ -130,10 +130,6 @@
 
                             </form>
 
-                            <div  class="modal my-modal">
-                                <p class="modal-content">Thank you for getting in touch! We appreciate you contacting us.</p>
-                                <button  id="close-btn" class="modal-close"  type="submit">Close</button>
-                            </div>
                         </div>
                     </section>
 
@@ -151,6 +147,16 @@
                                 </div>
                         </div>
                     </footer>
+        </div>
+        <div  class="modal my-modal">
+            <h3>გამოიწერე ჩვენი გვერდი!</h3>
+            <p class="modal-content">არ გამოტოვო სიახლეები, გამოიყენე ფასდაკლებები და აქციები</p>
+            <div class="input-info form-field" >
+                <label id="modal-email" for="email">ელ. ფოსტა</label>
+                <input id="modal-email-line" name="email" type="email" id="email"  value="" required />
+            </div>
+            <button  id="close-btn" class="modal-close"  type="submit">X</button>
+            <button  class="sendbut"  type="submit">გამოწერა</button>
         </div>
     </main>
     <script src="app.js"></script>
