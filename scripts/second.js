@@ -69,10 +69,7 @@ fixedBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, left: 100, behavior: 'smooth' });
   });
 
-
-
-
-
+  
 // rects
 rectangles.forEach((rectangle ,rectanglesindex) => {
     rectangle.addEventListener('click', () => {

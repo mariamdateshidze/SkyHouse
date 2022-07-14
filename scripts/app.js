@@ -21,7 +21,7 @@ setTimeout(
 	function(){
         openModal();
     }
-  ,5000 
+  ,6000 
 );
   
 function openModal(){
