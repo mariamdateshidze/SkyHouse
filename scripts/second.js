@@ -154,6 +154,7 @@ form.addEventListener('submit', e => {
 
     sendInfo.addEventListener('click', () => {
         if(validateEmail() && validateMobilenumber() ){
+            playAudio();
             alert("თქვენი ინფორმაცია გაგზავნილია")
             form.reset();
         }

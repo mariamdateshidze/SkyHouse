@@ -12,6 +12,7 @@ const myModal = document.querySelector('.modal');
 const content = document.querySelector('.main-cont')
 
 const modalbtn = document.querySelector('.sendbut')
+const audio = document.getElementById('audio');
 
 
 let myInterval=null;
@@ -37,10 +38,15 @@ closeBtn.addEventListener('click', () => {
     });
 
 modalbtn.addEventListener('click', () => {
+    playAudio();
     alert("თქვენ გამოიწერეთ გვერდი")
     myModal.classList.remove('visible');
     content.classList.remove('blured')
     });
+
+function playAudio()  {
+  audio.play();
+}
 
 //   form
 form.addEventListener('submit', e => {
@@ -92,6 +98,7 @@ form.addEventListener('submit', e => {
 
     sendInfo.addEventListener('click', () => {
         if(validateEmail() && validateMobilenumber() ){
+            playAudio();
             alert("თქვენი ინფორმაცია გაგზავნილია")
             form.reset();
         }
@@ -102,6 +109,7 @@ form.addEventListener('submit', e => {
 // 
 fixedBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, left: 100, behavior: 'smooth' });
+    
   });
 
 moreBtn.addEventListener('click', () => {

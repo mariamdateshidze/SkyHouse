@@ -167,6 +167,7 @@
 }
 
 .more-info.active{
+    padding:  0 90px;
     display: block;
 }
 
@@ -532,7 +533,6 @@ footer{
     width: 500px;
     margin-left: 700px;
     margin-top: -260px;
-    background-image: linear-gradient(to right, red , yellow);
 }
 
 /* services */
@@ -554,6 +554,10 @@ footer{
     margin-bottom: 20px;
     cursor: pointer;
     margin-right: 20px;
+}
+
+#mobile-vers{
+    display: none;
 }
 
 .three-rect{
@@ -720,4 +724,9 @@ footer{
 .partners-img{
     margin-top: 60px;
 
+}
+
+#audio{
+    display: none;
+    
 }
