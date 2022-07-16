@@ -164,7 +164,7 @@ form.addEventListener('submit', e => {
     });
 
 
-    burgerBtn.addEventListener('click', () => {
-      burgerBtn.classList.toggle('active')
-      burgerMenu.classList.toggle('active')
-    });
+burgerBtn.addEventListener('click', () => {
+  burgerBtn.classList.toggle('active')
+  burgerMenu.classList.toggle('active')
+});

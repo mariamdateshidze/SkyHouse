@@ -175,11 +175,7 @@
         margin-top: 100px;
         margin-left: -200px;
     }
- 
-   
 }
-
-
 
 @media (max-width: 480px){
     .pictures-slide{
@@ -268,15 +264,7 @@
     .rectangle2{
         width: 10px;
         height: 10px;
-    }
-
-    
-    .responsive-nav{
-        padding: 20px;
-        margin-top: 100px;
-        margin-left: -200px;
-    }
-    
+    } 
         
 }
 
