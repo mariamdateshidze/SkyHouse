@@ -224,8 +224,12 @@
         padding: 0 20px;
      
     }
-    .modal{
+    .modal.visible{
        display: none;
+    }
+    .main-cont.blured{
+        filter: none;
+
     }
     /* second html */
     .about-us p{
