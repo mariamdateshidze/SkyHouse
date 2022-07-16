@@ -67,8 +67,8 @@
     }
 
     .about-us img{
-        width: 300px;
-        margin-left: 600px;
+        width: 250px;
+        margin-left: 540px;
     }
 
     .three-rect{
@@ -77,16 +77,29 @@
         margin-top: -20px;
     }
     .projects-pic img{
-        width: 250px;
+        width: 220px;
         margin-right: 30px;
     }
-    .pics-3 img{
-        width: 140px;
+    .projects-pics{
+        flex-wrap: wrap;
     }
+    .pics-3 img{
+        width: 120px;
+    }
+    .container{
+        padding: 10px 20px;
+    }
+    .slider-btns{
+        display: none;
+    }
+
 }
 
 
 @media (max-width: 768px){
+    li{
+        display: none;
+    }
     .main-pic{
         display: none;
     }
@@ -124,7 +137,8 @@
         display: none;
     }
     .about-us p{
-        padding: 0 20px;
+        padding: 0 10px;
+        width: 400px;
     }
 
     .about-us img{
@@ -132,14 +146,36 @@
     }
 
     .three-rect{
-        margin-left: 400px;
+        margin-left: 300px;
     }
     .projects-pic img{
         width: 190px;
     }
     .pics-3 img{
-        width: 120px;
+        width: 100px;
     }
+    .partners{
+        flex-direction: column;
+    }
+
+    .partners-box h3{
+        margin-top: 200px;
+    }
+    
+    .burger-menu{
+        display: block;
+    }
+   
+    .responsive-nav li{
+        display: block;
+    }
+      
+    .responsive-nav{
+        padding: 20px;
+        margin-top: 100px;
+        margin-left: -200px;
+    }
+ 
    
 }
 
@@ -233,11 +269,19 @@
         width: 10px;
         height: 10px;
     }
+
+    
+    .responsive-nav{
+        padding: 20px;
+        margin-top: 100px;
+        margin-left: -200px;
+    }
     
         
 }
 
 @media (max-width: 320px){
+   
     .input-info input{
         width: 190px;
     }
@@ -290,7 +334,5 @@
     .pics-3 img{
         width: 60px;
     }
-    li{
-        display: none;
-    }
+   
 }

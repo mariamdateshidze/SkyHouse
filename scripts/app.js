@@ -14,6 +14,9 @@ const content = document.querySelector('.main-cont')
 const modalbtn = document.querySelector('.sendbut')
 const audio = document.getElementById('audio');
 
+const burgerBtn = document.querySelector('.burger-menu')
+const burgerMenu = document.querySelector('.responsive-nav')
+
 
 let myInterval=null;
 let activeIndex = 0;
@@ -116,6 +119,11 @@ moreBtn.addEventListener('click', () => {
     moreInfo.classList.toggle('active')
     });
 
+
+burgerBtn.addEventListener('click', () => {
+  burgerBtn.classList.toggle('active')
+  burgerMenu.classList.toggle('active')
+});
 
 
 

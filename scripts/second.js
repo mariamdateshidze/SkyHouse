@@ -14,6 +14,9 @@ const form = document.querySelector('.form-box');
 const emailInput = document.querySelector('input[name="email"]');
 const mobileInput = document.querySelector('input[name="mobile_number"]');
 
+const burgerBtn = document.querySelector('.burger-menu')
+const burgerMenu = document.querySelector('.responsive-nav')
+
 let myInterval=null;
 let activeIndex = 0;
 
@@ -158,4 +161,10 @@ form.addEventListener('submit', e => {
             alert("თქვენი ინფორმაცია გაგზავნილია")
             form.reset();
         }
+    });
+
+
+    burgerBtn.addEventListener('click', () => {
+      burgerBtn.classList.toggle('active')
+      burgerMenu.classList.toggle('active')
     });
